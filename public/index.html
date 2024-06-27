@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gerenciamento de Carros e Categorias</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>Gerenciamento de Carros e Categorias</h2>
+
+      <div>
+        <section>
+          <form id="car-form">
+            <h3>Registrar Carro</h3>
+            <label for="car-modelo">Modelo:</label>
+            <input type="text" id="car-modelo" name="modelo" required /><br />
+            <label for="car-marca">Marca:</label>
+            <input type="text" id="car-marca" name="marca" required /><br />
+            <label for="car-ano">Ano:</label>
+            <input type="number" id="car-ano" name="ano" required /><br />
+            <label for="car-cor">Cor:</label>
+            <input type="text" id="car-cor" name="cor" required /><br />
+            <button type="submit">Registrar</button>
+          </form>
+        </section>
+
+        <section>
+          <h3>Lista de Carros</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Modelo</th>
+                  <th>Marca</th>
+                  <th>Ano</th>
+                  <th>Cor</th>
+                </tr>
+              </thead>
+              <tbody id="car-list"></tbody>
+            </table>
+        </section>
+
+        <section>
+          <form id="category-form">
+            <h3>Registrar Cateogria</h3>
+            <label for="category-nome">Nome da Categoria:</label>
+            <input
+              type="text"
+              id="category-nome"
+              name="nome_categoria"
+              required
+            /><br />
+            <label for="category-capacidade">Capacidade de Passageiros:</label>
+            <input
+              type="number"
+              id="category-capacidade"
+              name="capacidade_passageiros"
+              required
+            /><br />
+            <label for="category-tipo">Tipo de Combustível:</label>
+            <input
+              type="string"
+              id="category-tipo"
+              name="tipo_combustivel"
+              required
+            /><br />
+            <button type="submit">Registrar</button>
+          </form>
+        </section>
+
+        <section>
+          <h3>Lista de Categorias</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Categoria</th>
+                  <th>Capacidade de Passageiros</th>
+                  <th>Tipo de Combustível</th>
+                </tr>
+              </thead>
+              <tbody id="category-list"></tbody>
+              
+              </div>
+            </table>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
